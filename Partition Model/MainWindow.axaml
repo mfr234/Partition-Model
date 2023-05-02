@@ -1,0 +1,52 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="480"
+        Width="400" Height="480"
+        x:Class="Partition_Model.MainWindow"
+        Title="Partition Model">
+
+	<StackPanel>
+		<TextBlock Text="Partition Model" HorizontalAlignment="Center" Margin="0,10,0,10"/>
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+			<Label Content="Lung Shunt (%):" Width="120" HorizontalContentAlignment="Center"/>
+			<TextBox Text="{Binding LungShunt}" Width="100" HorizontalContentAlignment="Center"/>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+			<Label Content="Lung Mass (g):" Width="120" HorizontalContentAlignment="Center"/>
+			<TextBox Text="{Binding LungMass}" Width="100" HorizontalContentAlignment="Center"/>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+			<Label Content="Liver Volume (cm3):" Width="150" HorizontalContentAlignment="Center"/>
+			<TextBox Text="{Binding LiverVolume}" Width="100" HorizontalContentAlignment="Center"/>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+			<Label Content="T/N Ratio:" Width="120" HorizontalContentAlignment="Center"/>
+			<TextBox Text="{Binding TnRatio}" Width="100" HorizontalContentAlignment="Center"/>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+			<Label Content="Tumor Volume (g):" Width="130" HorizontalContentAlignment="Center"/>
+			<TextBox Text="{Binding TumorVolume}" Width="100" HorizontalContentAlignment="Center"/>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+			<Label Content="Tumor Dose (Gy):" Width="120" HorizontalContentAlignment="Center"/>
+			<TextBox Text="{Binding TumorDose}" Width="100" HorizontalContentAlignment="Center"/>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+			<Label Content="Prescribed Dose Activity (GBq):" Width="220" HorizontalContentAlignment="Center"/>
+			<TextBox Text="{Binding DoseActivity}" Width="100" HorizontalContentAlignment="Center"/>
+		</StackPanel>
+
+		<Button Content="Calculate" Click="OnCalculateClick" Width="100" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+
+	</StackPanel>
+
+</Window>
